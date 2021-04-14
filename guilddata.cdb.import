@@ -1,0 +1,14 @@
+[remap]
+
+importer="castledb.importer"
+type="Script"
+path="res://.import/guilddata.cdb-cf12ec8af4e5a452662cf47cc7305449.gd"
+
+[deps]
+
+source_file="res://guilddata.cdb"
+dest_files=[ "res://.import/guilddata.cdb-cf12ec8af4e5a452662cf47cc7305449.gd" ]
+
+[params]
+
+default=false

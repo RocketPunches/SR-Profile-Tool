@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Left Arrow.png-b230c98226947edbc9b0ce3a83012486.image"
+
+[deps]
+
+source_file="res://Assets/Textures/Left Arrow.png"
+dest_files=[ "res://.import/Left Arrow.png-b230c98226947edbc9b0ce3a83012486.image" ]
+
+[params]
+

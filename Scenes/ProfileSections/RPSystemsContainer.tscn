@@ -1,0 +1,201 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scenes/Components/HInputFieldGroup.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Themes/main_theme.tres" type="Theme" id=2]
+[ext_resource path="res://Themes/Fonts/input_field_font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Scripts/Profile Scripts/Class1.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Profile Scripts/Class2.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Profile Scripts/Bloodline2.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/Profile Scripts/BloodlineType2.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/Profile Scripts/Discipline1.gd" type="Script" id=9]
+[ext_resource path="res://Scripts/Profile Scripts/Discipline2.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/Profile Scripts/BloodlineType1.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/Profile Scripts/Bloodline1.gd" type="Script" id=12]
+
+[node name="RPSystemsContainer" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_use_anchors_": false
+}
+
+[node name="Spacer" type="Container" parent="."]
+margin_right = 1024.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Class1DropContainer" type="HBoxContainer" parent="."]
+margin_top = 24.0
+margin_right = 1024.0
+margin_bottom = 62.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Class1Label" type="Label" parent="Class1DropContainer"]
+margin_left = 282.0
+margin_right = 432.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 150, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "Class 1"
+align = 2
+valign = 1
+
+[node name="ClassDrop1" type="OptionButton" parent="Class1DropContainer"]
+margin_left = 437.0
+margin_right = 587.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+script = ExtResource( 5 )
+discipline_1_path = NodePath("../DiscDrop1")
+discipline_2_path = NodePath("../../Class2DropContainer/DiscDrop2")
+class_2_path = NodePath("../../Class2DropContainer/ClassDrop2")
+
+[node name="DiscDrop1" type="OptionButton" parent="Class1DropContainer"]
+margin_left = 592.0
+margin_right = 742.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+script = ExtResource( 9 )
+discipline_2_path = NodePath("../../Class2DropContainer/DiscDrop2")
+class_1_path = NodePath("../ClassDrop1")
+class_2_path = NodePath("../../Class2DropContainer/ClassDrop2")
+bl_label_path = NodePath("../../Bloodline1DropContainer/Bloodline1Label")
+bloodline_1_path = NodePath("../../Bloodline1DropContainer")
+bloodline_2_path = NodePath("../../Bloodline2DropContainer")
+
+[node name="Class2DropContainer" type="HBoxContainer" parent="."]
+margin_top = 66.0
+margin_right = 1024.0
+margin_bottom = 104.0
+theme = ExtResource( 2 )
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Class2Label" type="Label" parent="Class2DropContainer"]
+margin_left = 282.0
+margin_right = 432.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 150, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "Class 2"
+align = 2
+valign = 1
+
+[node name="ClassDrop2" type="OptionButton" parent="Class2DropContainer"]
+margin_left = 437.0
+margin_right = 587.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+script = ExtResource( 6 )
+discipline_path = NodePath("../DiscDrop2")
+
+[node name="DiscDrop2" type="OptionButton" parent="Class2DropContainer"]
+margin_left = 592.0
+margin_right = 742.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+script = ExtResource( 10 )
+discipline_1_path = NodePath("../../Class1DropContainer/DiscDrop1")
+class_1_path = NodePath("../../Class1DropContainer/ClassDrop1")
+class_2_path = NodePath("../ClassDrop2")
+
+[node name="Spacer2" type="Container" parent="."]
+margin_top = 108.0
+margin_right = 1024.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Bloodline1DropContainer" type="HBoxContainer" parent="."]
+margin_top = 132.0
+margin_right = 1024.0
+margin_bottom = 170.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Bloodline1Label" type="Label" parent="Bloodline1DropContainer"]
+margin_left = 244.0
+margin_right = 419.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 175, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "Bloodline"
+align = 2
+valign = 1
+
+[node name="BloodlineType1" type="OptionButton" parent="Bloodline1DropContainer"]
+margin_left = 424.0
+margin_right = 599.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+script = ExtResource( 11 )
+bloodline_drop_path = NodePath("../BloodlineDrop1")
+
+[node name="BloodlineDrop1" type="OptionButton" parent="Bloodline1DropContainer"]
+margin_left = 604.0
+margin_right = 779.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+disabled = true
+script = ExtResource( 12 )
+bloodline_type_path = NodePath("../BloodlineType1")
+
+[node name="Bloodline2DropContainer" type="HBoxContainer" parent="."]
+visible = false
+margin_top = 174.0
+margin_right = 1024.0
+margin_bottom = 212.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Bloodline2Label" type="Label" parent="Bloodline2DropContainer"]
+margin_left = 334.0
+margin_right = 509.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 175, 0 )
+custom_fonts/font = ExtResource( 3 )
+text = "Bloodline 2"
+align = 2
+valign = 1
+
+[node name="BloodlineType2" type="OptionButton" parent="Bloodline2DropContainer"]
+margin_left = 514.0
+margin_right = 689.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+disabled = true
+script = ExtResource( 8 )
+bloodline_drop_path = NodePath("../BloodlineDrop2")
+
+[node name="BloodlineDrop2" type="OptionButton" parent="Bloodline2DropContainer"]
+margin_left = 514.0
+margin_right = 689.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+disabled = true
+script = ExtResource( 7 )
+
+[node name="Spacer3" type="Container" parent="."]
+margin_top = 174.0
+margin_right = 1024.0
+margin_bottom = 194.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="HInputFieldGroup" parent="." instance=ExtResource( 1 )]
+margin_top = 198.0
+margin_bottom = 238.0
+[connection signal="item_selected" from="Class1DropContainer/ClassDrop1" to="Class1DropContainer/ClassDrop1" method="_on_ClassDrop1_item_selected"]
+[connection signal="item_selected" from="Class1DropContainer/DiscDrop1" to="Class1DropContainer/DiscDrop1" method="_on_DiscDrop1_item_selected"]
+[connection signal="item_selected" from="Class2DropContainer/ClassDrop2" to="Class2DropContainer/ClassDrop2" method="_on_ClassDrop2_item_selected"]
+[connection signal="item_selected" from="Class2DropContainer/DiscDrop2" to="Class2DropContainer/DiscDrop2" method="_on_DiscDrop2_item_selected"]
+[connection signal="item_selected" from="Bloodline1DropContainer/BloodlineType1" to="Bloodline1DropContainer/BloodlineType1" method="_on_BloodlineType1_item_selected"]
+[connection signal="item_selected" from="Bloodline2DropContainer/BloodlineType2" to="Bloodline2DropContainer/BloodlineType2" method="_on_BloodlineType2_item_selected"]

@@ -1,0 +1,2370 @@
+{
+	"sheets": [
+		{
+			"name": "classes",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "8",
+					"name": "disciplines",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "resources"
+				}
+			],
+			"lines": [
+				{
+					"id": "Ninjutsu",
+					"disciplines": [
+						{
+							"discipline_name": "Harsh Elementalist",
+							"discipline_text": "The user starts with an additional element at D rank. In addition, at C rank and A rank, the user receives an additional element each. Ninjutsu class slots are mirrored per element, including maruton. The Elementalist's wide understanding of the elements reduces the cost of their elemental ninjutsu by [1] whole rank without losing their potency but elemental ninjutsu cannot be lowered in cost beyond this. Additionally, the user can choose [1] elemental status effect upon the character's creation that will cruelly apply at [1] tier higher than the rank of the technique at a maximum of the fourth tier on contact."
+						},
+						{
+							"discipline_name": "Elemental Mastery",
+							"discipline_text": "The user's ninjutsu gains the ability to overwhelm techniques of the same rank. The overwhelming trait only applies to a single element at D rank, increasing to two at A rank. Overwhelming properties do not apply to techniques above S Rank. In addition, each rank that you gain an overwhelming property the user gains a free Element PA that allows the user to augment their ninjutsu that gained the property with an additional effect for no resource or action payment, allowing the user's ninjutsu to shine. You gain an additional 4 Ninjutsu per body rank that are dedicated to their primary element. Also, the user gains access to Augment Skill Lines for the cost of it's primary technique slot and is not required to pay additional slots for skills in this line. Finally, the user's two chosen overwhelming elements can be combined into [1] advanced nature kekkei genkai that counts as a free implant. This implant does not consume an implant slot but does have the restrictions of the implant system. The implant does not carry the overwhelming factor of its base elements through this discipline."
+						},
+						{
+							"discipline_name": "Genius Keystone",
+							"discipline_text": "You may create a \"keystone\" technique; this technique is essentially a Ninjutsu ninja's signature move, with power, aesthetic flair and versatility as described in the Keystone Guideline. In addition, you are able to use your third action for any ninjutsu, whether it is offensive or defensive, once every two turns. This discipline may not be taken in conjunction with another Keystone Discipline. Finally, Genius Keystone Ninja have the ability to Korabo their ninjutsu for [1] action to boost the rank of the korabo'd technique by [1] up to S+ rank with varying cool downs depending on the rank of the techniques."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 10,
+							"genjutsu": 5,
+							"taijutsu": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"flexible_tai_buki": 1,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0,
+							"bukijutsu": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 125,
+							"ninjutsu": 15,
+							"genjutsu": 10,
+							"taijutsu": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"flexible_tai_buki": 1,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0,
+							"bukijutsu": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 150,
+							"ninjutsu": 20,
+							"genjutsu": 15,
+							"taijutsu": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"flexible_tai_buki": 2,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0,
+							"bukijutsu": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 300,
+							"stamina": 175,
+							"ninjutsu": 25,
+							"genjutsu": 20,
+							"taijutsu": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"flexible_tai_buki": 2,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0,
+							"bukijutsu": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 350,
+							"stamina": 200,
+							"ninjutsu": 30,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"flexible_tai_buki": 2,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0,
+							"bukijutsu": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 400,
+							"stamina": 225,
+							"ninjutsu": 35,
+							"genjutsu": 30,
+							"taijutsu": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"flexible_tai_buki": 2,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0,
+							"bukijutsu": 0
+						}
+					]
+				},
+				{
+					"id": "Genjutsu",
+					"disciplines": [
+						{
+							"discipline_name": "Lasting Hypnosis",
+							"discipline_text": "The user's genjutsu prowess has achieved a heightened level of potency and lingers for longer. The primary sense of any genjutsu that was released using Kai lingers for [1] additional post. This residual effect is minor because the manipulation of the target with the technique has ended. For example, a complete darkness sight genjutsu that was dispelled may leave the lingering feeling that the world is still a bit darker than it is in reality. If a genjutsu used a mental status effect then it will linger for [1] post longer at one level below what it was before at a minimum of level one. Originally level one mental status effects are too weak to linger. The base duration of your genjutsu are increased by [1] post at E-C, [2] at B-A, and [3] at S and above. Instance genjutsu are not affected by an increase of duration but instead cannot be dispelled by kai and only by pain. Genjutsu upkeep lessens by [5] Chakra per body rank and non-Instant are applied with overwhelming, requiring lingering genjutsu to use [1.5x] the resource to Kai."
+						},
+						{
+							"discipline_name": "Master of Deception",
+							"discipline_text": "With genjutsu, realism and the sensory ability of the target factor heavily into the ability of the victim to realize they are in a genjutsu. The illusionist chooses [1] Sense of Specialization that will render a genjutsu cost [1] rank less if the casted genjutsu's primary sense is their specialization. Genjutsu that use the illusionist's Sense of Specialization as the primary sense become resistant to the sensory powers of sages and non-Infinite Perception discipline scholars. This resistance means that the genjutsu will go unnoticed from these abilities. Since the illusionist has become so adept in their Sense of Specialization they may always weave it into genjutsu as an Additional Sense unless it would bring the illusion's sensory control above the [5] limit. The illusionist may also always select any Additional Sense that is not their Sense of Specialization to add to a genjutsu as long as it does not exceed the cap of [5] manipulated senses.  Sense of Specialization: [ Must be chosen and listed here on character creation. Requires a profile respec to change. ]"
+						},
+						{
+							"discipline_name": "Unbreakable Mind",
+							"discipline_text": "A genjutsu user must, at all times, learn what it takes to make one's illusions more believable. This expertise helps the user learn to identify that which others use and these shinobi build their mental fortitude to a laudable degree. Genjutsu cast upon shinobi of this discipline are easier to discern as fake and are treated as one rank lower to kai and as one tier lower for pain [ minimum of tier one and maximum of tier three ]. Furthermore, they are uniquely able to resist overwhelming instance genjutsu. These mentally strong individuals are also able to choose one sense of resistance. If a genjutsu uses that sense as the primary then they can release themselves at half the chakra cost.  Sense of Resistance: [ Must be chosen and listed here on character creation. Requires a profile respec to change. ]"
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 5,
+							"genjutsu": 10,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 125,
+							"ninjutsu": 10,
+							"genjutsu": 20,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 150,
+							"ninjutsu": 15,
+							"genjutsu": 30,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 300,
+							"stamina": 175,
+							"ninjutsu": 20,
+							"genjutsu": 40,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 350,
+							"stamina": 200,
+							"ninjutsu": 25,
+							"genjutsu": 45,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 400,
+							"stamina": 225,
+							"ninjutsu": 30,
+							"genjutsu": 50,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Taijutsu",
+					"disciplines": [
+						{
+							"discipline_name": "Berserker",
+							"discipline_text": "Your external training and devotion to taijutsu has allowed you to have a [+1] stat increases to Strength and Endurance. Your hardened body naturally is as protective as Heavy Tier armor without its drawbacks. Degradation of the user's natural defenses applies in the same manner as armor. Once depleted, any damage the user takes, no matter the rank of damage applied increases the user's strength and speed by 1 stat point each for two posts up to 9 points. Should the user take additional damage before the end of the second post, the increase stacks, refreshing it's active time."
+						},
+						{
+							"discipline_name": "Battlefield Presence",
+							"discipline_text": "he user's powerful presence on the battlefield strikes terror into their foes. Opponents are able to sense the user's terrifying fighting spirit five feet from the user per body rank of the user through chakra sense. Those within range can have this radiating fearful aura become the trigger for genjutsu, allowing genjutsu to be cast by acknowledging the user. In addition, should an opponent be targeted by a melee technique that is greater in rank than the target's body rank that target has tier two paralysis applied to their legs, requiring it to be broken by Kai equal to the user's body rank, costing the target no action for that specific instance of kai."
+						},
+						{
+							"discipline_name": "Brawler",
+							"discipline_text": "Your taijutsu is just one side of your skill, as you are also versed in utilizing ninjutsu as well. Your Speed and Agility are enhanced by [+1] and you gain an additional [4] ninjutsu slots per rank. Once every other post all three of your actions in a post can be used for offensive taijutsu. Additionally, the user gains a keystone technique and two additional custom slots for taijutsu. Refer to the Keystone Guideline for more information."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 100,
+							"stamina": 200,
+							"ninjutsu": 5,
+							"genjutsu": 3,
+							"taijutsu": 1,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 125,
+							"stamina": 230,
+							"ninjutsu": 10,
+							"genjutsu": 6,
+							"taijutsu": 2,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 150,
+							"stamina": 260,
+							"ninjutsu": 15,
+							"genjutsu": 9,
+							"taijutsu": 3,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 175,
+							"stamina": 300,
+							"ninjutsu": 20,
+							"genjutsu": 12,
+							"taijutsu": 4,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 200,
+							"stamina": 350,
+							"ninjutsu": 25,
+							"genjutsu": 15,
+							"taijutsu": 5,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 225,
+							"stamina": 400,
+							"ninjutsu": 30,
+							"genjutsu": 18,
+							"taijutsu": 5,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Bukijutsu",
+					"disciplines": [
+						{
+							"discipline_name": "Juggernaut",
+							"discipline_text": "The user suffers no restrictions of movement or drawbacks from any armor tier they wear and it requires no slot consumption from the Inventory System. In addition, armor they are actively wearing are increased by two ranks in durability and techniques that are increased in effectiveness against armor do not gain that bonus against the user. The user gains a [+1] stats boost to strength and endurance. Once every three posts, the user is able to defend an attack without paying an action for the technique, instead spending it upon an offensive action if the user chooses."
+						},
+						{
+							"discipline_name": "Expert",
+							"discipline_text": "The user has achieved a sense of mastery and focus unlike others and are known as an Expert, a dedicated focus over a weapon they use to near perfection. The shinobi can pick a single weapon, or two if dual wielding, to apply this focus toward with examples such as Katana, Spear, Bows or even Dual Daggers. They acquire a Keystone technique that is unique to them with an additional 2 Custom Techniques derived of this special ability. Refer to the Keystone Guideline for more information. They gain a [+1] boost to both speed and agility & techniques cost [5] less Chakra and/or Stamina per rank of the technique when wielding attacks with their specialized weapon in attack or defense. With a minimum of 5 chakra or stamina paid."
+						},
+						{
+							"discipline_name": "Mystic Hero",
+							"discipline_text": "The user has become adept at blending their ninjutsu and bukijutsu. The user is able to cast ninjutsu from their weapon without the use of hand signs by making any flourish or deliberate movement to cast the technique in the direction the weapon is commanded. This requires the same amount of time as the forming of hand signs to cast ninjutsu. They are also able to Korabo 1 ninjutsu and 1 bukijutsu together with varying cool downs for a single action."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 100,
+							"stamina": 200,
+							"ninjutsu": 5,
+							"genjutsu": 3,
+							"taijutsu": 1,
+							"bukijutsu": 1,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 125,
+							"stamina": 230,
+							"ninjutsu": 10,
+							"genjutsu": 6,
+							"taijutsu": 1,
+							"bukijutsu": 2,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 150,
+							"stamina": 260,
+							"ninjutsu": 15,
+							"genjutsu": 9,
+							"taijutsu": 1,
+							"bukijutsu": 3,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 175,
+							"stamina": 300,
+							"ninjutsu": 20,
+							"genjutsu": 12,
+							"taijutsu": 1,
+							"bukijutsu": 4,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 200,
+							"stamina": 350,
+							"ninjutsu": 25,
+							"genjutsu": 15,
+							"taijutsu": 1,
+							"bukijutsu": 5,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 225,
+							"stamina": 400,
+							"ninjutsu": 30,
+							"genjutsu": 18,
+							"taijutsu": 1,
+							"bukijutsu": 5,
+							"flexible_tai_buki": 0,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Scholar",
+					"disciplines": [
+						{
+							"discipline_name": "Peerless Summoner",
+							"discipline_text": "You are more specialized in summoning and sealing than sensory. You are allowed to have a mirrored amount of your total ninjutsu slots granted by this class exclusively reserved for sealing. In addition, all sealing techniques are considered overwhelming when in collision with other techniques of the same rank. This benefit only applies to techniques S-ranked and below. Finally, if you are able to summon any contract summon, including of a bloodline connection or a contract signature, you are able to summon beings at one rank lower than normally required and 50 chakra and stamina is granted to them per rank of the summoned creature starting at 50 for D-Rank and ending with 250 for the boss summon, or 300 if a mythical summon is contracted. The user's summoned creatures are able to use any ninjutsu the user has access to that they share an element for as well as any genjutsu, taijutsu, and bukijutsu. Your summoned creature's unique techniques are considered overwhelming at S-rank and below in collisions."
+						},
+						{
+							"discipline_name": "Infinite Perception",
+							"discipline_text": "Your specialty is more in sensory than in sealing or summoning. You are able to discover things such as demon chakra, or the type of technique that is about to be active (Ninjutsu, Genjutsu, etc.), even specifics such as Bloodline type and rank from any active sensory technique. This discipline allows the user to be able to sense their enemy’s ninjutsu attacks and their composition, which grants a -2 rank reduction to dodging with the dodge mechanic X-ranked skill so long as it was used within the range of the user’s sensory abilities. You can release yourself from genjutsu at one rank lower in kai chakra release but with no benefit in pain release. In addition, the user's sensory abilities are extended fifty feet per rank of the technique. As a master tracker, you can advance in the ninja hunter and special ops careers for half as many Oinin Butai and ANBU missions completed. Upon reaching Initiate in Oinin Butai, you gain the Eagle Eye perk innately so you can choose one other Oinin perk as well. When you use a sensory technique with jamming you can double the jamming effect, this ability applies to one technique per three posts."
+						},
+						{
+							"discipline_name": "Erudit Academic",
+							"discipline_text": "Instead of excelling at sensory or summoning abilities, you prefer pure sealing arts. The Academic's body is considered a scroll so seals can be used and stored on your direct body. Your body may be treated as three scrolls equal to your body rank. Fuuinjutsu and sensory skills do not require handseals and are one rank less in chakra cost (Following the one rank max reduction rules). All three of your actions can be used on fuuinjutsu and/or sensory for one post every three posts in combat. In addition, the duration of all sealing techniques and all sensory techniques are increased by two posts. Your expertise makes your seals innately intricate, meaning attempts to hijack your seals invoke a turn of neutralization where the seal is unusable to everyone before it falls under the hijacker's control. You automatically inflict one tier higher of Hex status (maximum of tier 4)."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 10,
+							"genjutsu": 5,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 125,
+							"ninjutsu": 20,
+							"genjutsu": 10,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 150,
+							"ninjutsu": 30,
+							"genjutsu": 15,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 300,
+							"stamina": 175,
+							"ninjutsu": 40,
+							"genjutsu": 20,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 350,
+							"stamina": 200,
+							"ninjutsu": 45,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 400,
+							"stamina": 225,
+							"ninjutsu": 50,
+							"genjutsu": 30,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Jack",
+					"disciplines": [
+						{
+							"discipline_name": "Master of None",
+							"discipline_text": "You are versed in a wide variety of shinobi techniques. Because of your broad training, you can easily fill in roles that usually need a specific type of ninja. You gain access to one of the following technique groups, without needing the associated class, up to one rank below your body: Medical, Sealing, or Sensory. Additionally, you receive 5 slots every other rank for that restricted art. {D,B,S} If Specialized gains access to a second at A and the third at S+, additionally your slots are mirrored across all three restricted categories. The Jack is not treated as having access to techniques that require scholar specialist or the single restricted technique scholar class ninja get (unless taking scholar in addition to this class or is specialized in the Jack class). As a versatile discipline, a Master of None also receives +1 to any stat for every other body rank starting at body rank C. {C,A,S+} Chosen Class Restricted Art: ( Medical, Sealing or Sensory )"
+						},
+						{
+							"discipline_name": "Right Tool For The Job",
+							"discipline_text": "At the beginning of each combat encounter, the Jack may select one type of technique. For the duration of that fight, techniques of that selected type have their costs reduced by a full rank. (Technique Types: Suiton, Doton, Fuuton, Maruton, Fuuin, Iryo, Sensory, etc) In addition, the user is able to carry an additional custom item or weapon that does not count towards their custom points. This custom item may have one additional ability without being considered a legendary item."
+						},
+						{
+							"discipline_name": "Mundane Master",
+							"discipline_text": "Sure, you have an elemental affinity like every other ninja, but, for some reason, you've really taken a shine to Maruton techniques. If you take this Discipline, your Maruton techniques gain Overwhelming. You may cast Maruton through one-handed seals or somatic gestures.{The Overwhelming Trait does not apply to anything above S} In addition, the user may create a free PA that augments their maruton techniques in some form every other rank starting at D rank {D, B, S}, adding depth to them without costing additional chakra. A Mundane Master may also select one status effect for all of their Maruton to apply using the following scale use the following scale: Tier 1 E-C | Tier 2 B-S. If specialized in Jack, follow the following scale: Tier 1 E-D | Tier 2 C | Tier 3 B-A | Tier 4 S-S+."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 10,
+							"genjutsu": 5,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 130,
+							"ninjutsu": 15,
+							"genjutsu": 15,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 160,
+							"ninjutsu": 20,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 290,
+							"stamina": 190,
+							"ninjutsu": 25,
+							"genjutsu": 35,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 4,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 340,
+							"stamina": 240,
+							"ninjutsu": 30,
+							"genjutsu": 45,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 4,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 390,
+							"stamina": 290,
+							"ninjutsu": 35,
+							"genjutsu": 50,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 4,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Bloodline",
+					"disciplines": [
+						{
+							"discipline_name": "Heritage Keystone",
+							"discipline_text": "You receive an additional 5 custom technique slots to be used only on bloodline and bloodline-related techniques. Additionally, you may create a \"keystone\" technique; this technique is essentially a Bloodline ninja's signature move, with power and versatility similar to a technique such as Kamui. This technique must be submitted as a custom jutsu and approved. It also does not take a custom jutsu slot. In addition, you are able to use your third action for any Bloodline Jutsu, whether it is offensive or defensive, once every two turns. This discipline may not be taken in conjunction with another Keystone Discipline. Refer to the Keystone Guideline for more information."
+						},
+						{
+							"discipline_name": "Dual Ancestry",
+							"discipline_text": "Dual Ancestry allows you to have full access to two bloodlines upon creation including all techniques, abilities, and personal attributes associated with them. For biographical purposes, your secondary bloodline may be genetic or implanted at your discretion. This discipline gives you [4] bloodline PAs to be used only for the bloodline attributes of your dual bloodlines on top of the [2] personal attributes you receive at base for a total of [6]. If two elemental bloodlines are chosen then the primary bloodline's elemental affinities become your base elements and you gain full access to those elements while your secondary bloodline gives you locked elemental affinities that you cannot learn ninjutsu techniques from but you gain full access to the secondary bloodline. Locked elemental affinities can be unlocked through methods such as ninjutsu class or personal attributes. Elemental affinity personal attributes are automatically allotted to locked affinities. Jiongu users do not have access to Dual Ancestry nor can they be chosen as a secondary bloodline. Dual Ancestry users do not have access to the implant system including the Genetic Palette personal attribute. If you use multiple techniques from both of your bloodlines in the same post without Korabo then those techniques are increased in effectiveness by one rank."
+						},
+						{
+							"discipline_name": "Blood Knight",
+							"discipline_text": "Your bloodline techniques possess greater power, allowing them to overwhelm techniques of the same rank and preventing them from succumbing to elemental weaknesses. You can cast bloodline techniques through one-handed seals. {The Overwhelming Trait does not apply to anything above S} In addition, Blood Knights are able to Korabo bloodline techniques at varying cool downs depending on the technique ranks for a single action. E-D - 0 C-B - 1 A-S - 2 S+ - 3"
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 150,
+							"stamina": 150,
+							"ninjutsu": 3,
+							"genjutsu": 3,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 180,
+							"stamina": 180,
+							"ninjutsu": 6,
+							"genjutsu": 6,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 210,
+							"stamina": 210,
+							"ninjutsu": 9,
+							"genjutsu": 9,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 240,
+							"stamina": 240,
+							"ninjutsu": 14,
+							"genjutsu": 14,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 290,
+							"stamina": 290,
+							"ninjutsu": 19,
+							"genjutsu": 19,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 340,
+							"stamina": 340,
+							"ninjutsu": 25,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Medical",
+					"disciplines": [
+						{
+							"discipline_name": "Maladies Physician",
+							"discipline_text": "Shinobi of this discipline are experts in iryojutsu and are especially well-versed in afflictions. Their medical techniques cure all symptoms of status effects applied to the user, rather than where most of the techniques cure them one at a time. In addition, medical techniques which inflict a status may inflict three different applications of the status, rather than just one. The user's crafted poisons also carry this property. The shinobi also obtains 5 custom techniques for medical ninjutsu as well as a Medical Ninjutsu Keystone technique. Refer to the Keystone Guideline for more information."
+						},
+						{
+							"discipline_name": "Combat Medic",
+							"discipline_text": "Shinobi of this discipline gain the ability to pay for their simple taijutsu as complex. This does not alter its strength in collisions in any way from a standard simple technique. The user's body is more attuned to adrenaline, which allows them to receive a benefit from their techniques which use them every other post versus every three post. In addition, the user gains a 1 point increase in a chosen stat per body rank but must utilize all increases in the same stat. The user's body is treated with the durability of medium armor without any drawbacks. The shinobi gains three tai slots, one at D rank, one at C rank, and then one at A-ranked. Finally, the user is able to augment their Genesis Rebirth Technique. Not only does this discipline allow the user to utilize the technique twice, but each time the user is restored of 250 chakra. The user also deals with trauma they receive at one rank less than other ninja."
+						},
+						{
+							"discipline_name": "Support Specialist",
+							"discipline_text": "The user is capable of conferring a 1 point stat boost to any ally that they desire. This stat boost can be what ever the medic wishes, however it can only go on one ally for as long as the medic wishes. Additionally to this, the medic is able to use healing iryojutsu on an ally from a distance as opposed to having to touch them. The range for this is fifty [50] feet. Furthermore, the user gains an additional 25 chakra per body rank. Tenketsu regeneration is applied at twice the amount, while techniques which cause tenketsu rot or burnout on the user have their effects reduced by half. Tenketsu restored by those with this discipline gain chakra equal to the rank of the tenketsu rot / burn out they suffered. So if the target is healed of tenketsu rot / burnout which prohibited the use of A-ranked techniques, then the target will gain 80 chakra in addition to having their tenketsu points restored. Finally this discipline allows the user to apply twice the tenketsu rot and burnout on techniques which utilize them."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 10,
+							"genjutsu": 3,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 10,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 125,
+							"ninjutsu": 15,
+							"genjutsu": 8,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 20,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 150,
+							"ninjutsu": 20,
+							"genjutsu": 13,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 30,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 300,
+							"stamina": 175,
+							"ninjutsu": 25,
+							"genjutsu": 18,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 40,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 350,
+							"stamina": 200,
+							"ninjutsu": 30,
+							"genjutsu": 23,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 45,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 400,
+							"stamina": 225,
+							"ninjutsu": 35,
+							"genjutsu": 28,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 50,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Performer",
+					"disciplines": [
+						{
+							"discipline_name": "Sinister Schemer",
+							"discipline_text": "These performers are masters of deception and have a flair for dramatics, they specialize in moving through courts unseen and are expert information gathers. Enemies won't know what hit them until they already have your dagger in their back. While they may not be as specialized as a genjutsu artist, the potency of their illusions is not to be underestimated. The Schemer is a master of misdirection, capable of replacing the senses affected by a genjutsu via the use of their performance. This can be done either before or during its duration without cost. The only requirement is that the RPC writes their performance into their post. Additionally, the Schemer may reapply any non-instanced genjutsu that has been kai'd immediately after it has been done so. This effect happens quickly enough that the target does not realize that they have not been returned to reality. Reapplying a genjutsu in this manner may only be done once per every casted gen, but also resets the duration of the jutsu. Finally, performers gain access to the song/performance technique below."
+						},
+						{
+							"discipline_name": "Compositional Therapist",
+							"discipline_text": "The most physical of the three disciplines, A compositional Therapist most commonly uses heavy beats to inspire bodies to move in rhythmic ways, healing the soul through captivating dances and wild acrobatics. This healing takes its form in raising stat caps ([4] to [6], [6] to [8], and [9] to [10]) of anyone listening (performer and allies), experiencing or taking part in whatever act the performer writes into their post. This, however, only breaks your stat caps and does not yet provide you with the points needed to reach these levels. Additionally, users gain access to the following to the song/performance technique below:"
+						},
+						{
+							"discipline_name": "Grand Illustrator",
+							"discipline_text": "Performance can be more than just making a song or moving to beats. It is about telling a story that fills the imagination and inspires people. More than just simple bards, those of this discipline do not just recite limerick and spread history; no, characters of this discipline create history all their own, spreading tales of fantasy and adventure that embody the oldest and noblest of human tradition and traits. They are a storyteller, who has mastered the art of taking any tool at their disposal and using it them to create something never before seen. When taking this discipline, characters are allowed to korabo any type of jutsu with another, as opposed to the normal limitations of korabo. This leaves it possible to create things anything from imagination, such as a genjutsu that heals others and many other combinations. This ability is done for a single activation by paying the chakra cost for both abilities. The only restriction is that the korabo must be incorporated as part of the user's performance, not just used during it. An example of this would be using the explosion from katon jutsu as a firework. In addition, the user also gains access to the following song technique. The cooldown for this korabo is once every three posts."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 10,
+							"genjutsu": 10,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 125,
+							"ninjutsu": 20,
+							"genjutsu": 20,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 150,
+							"ninjutsu": 25,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 300,
+							"stamina": 175,
+							"ninjutsu": 30,
+							"genjutsu": 30,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 350,
+							"stamina": 200,
+							"ninjutsu": 35,
+							"genjutsu": 35,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 400,
+							"stamina": 225,
+							"ninjutsu": 40,
+							"genjutsu": 40,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Puppeteer",
+					"disciplines": [
+						{
+							"discipline_name": "Arcane Puppetmaster",
+							"discipline_text": "You are most skilled with combining your puppets with chakra skills. Any spiritual kugutsu techniques gain overwhelming up to S-Rank. You can also cast any Ninjutsu and Genjutsu techniques that you know through your puppet without hand signs and instead with somatic hand movements. This takes the same amount of time to mold chakra as hand signs. Every other rank you gain [10] Ninjutsu or Genjutsu or mixed slots for a total of [30] slots (D, B, and S)."
+						},
+						{
+							"discipline_name": "Melee Marionette",
+							"discipline_text": "You are the puppeteer who takes the head-on approach with your creations fighting alongside you. Your puppet strings can manifest from your shoulders, knees, hips, arms, and legs so that your hands are free for physical or weapon attacks. Your puppet looks and moves like a \"real boy\" so you are able to use any Taijutsu and Bukijutsu through them. Any techniques used by the puppet carry the stats of the user. In addition, you gain [1] additional Taijutsu or Bukijutsu style every other rank for a total of [3], (D, B, and S). Your stats cap also increases to [6] rather than [4]."
+						},
+						{
+							"discipline_name": "Master Mechanist",
+							"discipline_text": "You have a fantastically creative mind, focusing your puppetry to make creations with highly unique characteristics. Your chakra-based mechanisms (for example, a puppet with a chakra shield) gain the overwhelming quality up to S-Rank. Each puppet has [3] unique mechanisms that do not count against the puppet’s mechanism limit. The mechanisms can be approved and used for other puppets but would otherwise not count toward the Puppeteer’s mechanism limit. The Puppeteer’s mechanisms push the limits of innovation, able to scale an additional rank. In addition, the user gets [2] more puppet points per rank, helping the user to better display his designs."
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 200,
+							"stamina": 100,
+							"ninjutsu": 10,
+							"genjutsu": 5,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 10,
+							"mechanisms": 8,
+							"puppet_points": 3,
+							"ta": 0
+						},
+						{
+							"rank": "C",
+							"chakra": 230,
+							"stamina": 125,
+							"ninjutsu": 15,
+							"genjutsu": 10,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 15,
+							"mechanisms": 16,
+							"puppet_points": 5,
+							"ta": 0
+						},
+						{
+							"rank": "B",
+							"chakra": 260,
+							"stamina": 150,
+							"ninjutsu": 25,
+							"genjutsu": 15,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 15,
+							"mechanisms": 22,
+							"puppet_points": 7,
+							"ta": 0
+						},
+						{
+							"rank": "A",
+							"chakra": 300,
+							"stamina": 175,
+							"ninjutsu": 30,
+							"genjutsu": 20,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 15,
+							"mechanisms": 26,
+							"puppet_points": 8,
+							"ta": 0
+						},
+						{
+							"rank": "S",
+							"chakra": 350,
+							"stamina": 200,
+							"ninjutsu": 40,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 15,
+							"mechanisms": 30,
+							"puppet_points": 9,
+							"ta": 0
+						},
+						{
+							"rank": "S+",
+							"chakra": 400,
+							"stamina": 225,
+							"ninjutsu": 45,
+							"genjutsu": 30,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 15,
+							"mechanisms": 34,
+							"puppet_points": 10,
+							"ta": 0
+						}
+					]
+				},
+				{
+					"id": "Tamer",
+					"disciplines": [
+						{
+							"discipline_name": "Synchronizing Schemers",
+							"discipline_text": "You are and your pets are able to harmonize far easier than most tamers. Mirroring an element only takes a single tamer attribute instead of two, and mirroring one branch of the tamer’s taijutsu or bukijutsu only takes four tamer attribute points. Finally, it only takes three points to mirror one of the tamer’s genjutsu branches. In addition, korabo between tamer and pet for ninjutsu may only take one action either from the tamer or the pet at varying cool downs depending on the technique ranks for a single action. This cooldown applies to all pets. E-D - 0 C-B - 1 A-S - 2 S+ - 3"
+						},
+						{
+							"discipline_name": "Chance Encounter",
+							"discipline_text": "You are allowed to have a pet with a mythological aspect to them. This branch requires the pet has a minimal of four TA points, (points may be borrowed from later in the class if a single class, as well as bypass that rule of TA per body rank until C-ranked). This pet may have one additional Tamer Attribute. In addition, this pet gains an additional 25 chakra and stamina per the body rank of the user. Finally, this pet may be summoned and dismissed either the summoning jutsu, or by any means of calling a pet, (whistling, shouting at the heavens, etc), as long as the means makes sense within roleplay. The chance encounter also blesses you with one of two options; either every other rank you gain [10] Ninjutsu or Genjutsu or mixed slots for a total of [30] slots (D, B, and S), or, you gain [1] additional Taijutsu or Bukijutsu style every other rank for a total of [3], (D, B, and S)."
+						},
+						{
+							"discipline_name": "Perfect Breeding",
+							"discipline_text": "Due to your training and breeding focused on your pet's strengths your pet is stronger than most other animals of it's kind and probably even stronger than you. Your pet's custom techniques gain the overwhelming quality up to S-Rank. When your pet has been allotted 6 TA, in addition to mirroring Taijutsu and Bukijutsu of the tamer your pet may gain [2] Points to 2 of their stats, which can bypass their tamer's stat cap up to 10. When they have been allotted 12 TA their remaining 2 stats also gain this benefit. In addition, the user gets [2] more tamer attribute points every other rank beginning at D-Rank. (D, B, S.)"
+						}
+					],
+					"resources": [
+						{
+							"rank": "D",
+							"chakra": 150,
+							"stamina": 150,
+							"ninjutsu": 5,
+							"genjutsu": 5,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 1,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 2
+						},
+						{
+							"rank": "C",
+							"chakra": 180,
+							"stamina": 180,
+							"ninjutsu": 10,
+							"genjutsu": 10,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 2,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 4
+						},
+						{
+							"rank": "B",
+							"chakra": 210,
+							"stamina": 210,
+							"ninjutsu": 15,
+							"genjutsu": 15,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 6
+						},
+						{
+							"rank": "A",
+							"chakra": 240,
+							"stamina": 240,
+							"ninjutsu": 20,
+							"genjutsu": 20,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 8
+						},
+						{
+							"rank": "S",
+							"chakra": 290,
+							"stamina": 290,
+							"ninjutsu": 25,
+							"genjutsu": 25,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 10
+						},
+						{
+							"rank": "S+",
+							"chakra": 340,
+							"stamina": 340,
+							"ninjutsu": 30,
+							"genjutsu": 30,
+							"taijutsu": 0,
+							"bukijutsu": 0,
+							"flexible_tai_buki": 3,
+							"iryojutsu": 0,
+							"kugutsu": 0,
+							"mechanisms": 0,
+							"puppet_points": 0,
+							"ta": 12
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "classes@disciplines",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "discipline_name"
+				},
+				{
+					"typeStr": "1",
+					"name": "discipline_text",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "classes@resources",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "rank",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "chakra"
+				},
+				{
+					"typeStr": "3",
+					"name": "stamina"
+				},
+				{
+					"typeStr": "3",
+					"name": "ninjutsu"
+				},
+				{
+					"typeStr": "3",
+					"name": "genjutsu"
+				},
+				{
+					"typeStr": "3",
+					"name": "taijutsu"
+				},
+				{
+					"typeStr": "3",
+					"name": "bukijutsu"
+				},
+				{
+					"typeStr": "3",
+					"name": "flexible_tai_buki"
+				},
+				{
+					"typeStr": "3",
+					"name": "iryojutsu"
+				},
+				{
+					"typeStr": "3",
+					"name": "kugutsu"
+				},
+				{
+					"typeStr": "3",
+					"name": "mechanisms"
+				},
+				{
+					"typeStr": "3",
+					"name": "puppet_points"
+				},
+				{
+					"typeStr": "3",
+					"name": "ta"
+				}
+			]
+		},
+		{
+			"name": "experience",
+			"columns": [
+				{
+					"typeStr": "8",
+					"name": "body_rank_value"
+				},
+				{
+					"typeStr": "8",
+					"name": "jutsu_rank_value",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "expansion_value",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"body_rank_value": [
+						{
+							"body_rank": "C",
+							"xp_required": 500
+						},
+						{
+							"body_rank": "B",
+							"xp_required": 1000
+						},
+						{
+							"body_rank": "A",
+							"xp_required": 2000
+						},
+						{
+							"body_rank": "S",
+							"xp_required": 4000
+						},
+						{
+							"body_rank": "S+",
+							"xp_required": 8000
+						}
+					],
+					"jutsu_rank_value": [
+						{
+							"jutsu_rank": "B",
+							"xp_required": 300
+						},
+						{
+							"jutsu_rank": "A",
+							"xp_required": 600
+						},
+						{
+							"jutsu_rank": "S",
+							"xp_required": 1200
+						},
+						{
+							"jutsu_rank": "S+",
+							"xp_required": 2400
+						}
+					],
+					"expansion_value": [
+						{
+							"xp_total": 100,
+							"resource_value": 50
+						},
+						{
+							"xp_total": 200,
+							"resource_value": 50
+						},
+						{
+							"xp_total": 400,
+							"resource_value": 50
+						},
+						{
+							"xp_total": 600,
+							"resource_value": 50
+						},
+						{
+							"xp_total": 700,
+							"resource_value": 50
+						},
+						{
+							"xp_total": 900,
+							"resource_value": 100
+						},
+						{
+							"xp_total": 1100,
+							"resource_value": 50
+						},
+						{
+							"xp_total": 1500,
+							"resource_value": 100
+						},
+						{
+							"xp_total": 1900,
+							"resource_value": 100
+						},
+						{
+							"xp_total": 2500,
+							"resource_value": 100
+						},
+						{
+							"xp_total": 3000,
+							"resource_value": 100
+						},
+						{
+							"xp_total": 3500,
+							"resource_value": 100
+						},
+						{
+							"xp_total": 5000,
+							"resource_value": 175
+						},
+						{
+							"xp_total": 7000,
+							"resource_value": 175
+						},
+						{
+							"xp_total": 8000,
+							"resource_value": 400
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "experience@body_rank_value",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "body_rank"
+				},
+				{
+					"typeStr": "3",
+					"name": "xp_required"
+				}
+			]
+		},
+		{
+			"name": "experience@jutsu_rank_value",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "jutsu_rank",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "xp_required"
+				}
+			]
+		},
+		{
+			"name": "experience@expansion_value",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "3",
+					"name": "xp_total"
+				},
+				{
+					"typeStr": "3",
+					"name": "resource_value"
+				}
+			]
+		},
+		{
+			"name": "menu_options",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "8",
+					"name": "elements"
+				}
+			],
+			"lines": [
+				{
+					"id": "classes",
+					"elements": [
+						{
+							"element": "Ninjutsu"
+						},
+						{
+							"element": "Genjutsu"
+						},
+						{
+							"element": "Taijutsu"
+						},
+						{
+							"element": "Bukijutsu"
+						},
+						{
+							"element": "Scholar"
+						},
+						{
+							"element": "Jack"
+						},
+						{
+							"element": "Bloodline"
+						},
+						{
+							"element": "Medical"
+						},
+						{
+							"element": "Performer"
+						},
+						{
+							"element": "Puppeteer"
+						},
+						{
+							"element": "Tamer"
+						}
+					]
+				},
+				{
+					"id": "bloodlines_types",
+					"elements": [
+						{
+							"element": "Dojutsu"
+						},
+						{
+							"element": "Chakra Manipulation"
+						},
+						{
+							"element": "Elemental"
+						}
+					]
+				},
+				{
+					"id": "dojutsu_bloodlines",
+					"elements": [
+						{
+							"element": "Uchiha Clan"
+						},
+						{
+							"element": "Mangekyo Sharingan"
+						},
+						{
+							"element": "Hyūga Clan"
+						},
+						{
+							"element": "Tenseigan"
+						},
+						{
+							"element": "Kurama Clan"
+						},
+						{
+							"element": "Ketsuryūgan"
+						}
+					]
+				},
+				{
+					"id": "chakra_manip_bloodlines",
+					"elements": [
+						{
+							"element": "Aburame Clan"
+						},
+						{
+							"element": "Nara Clan"
+						},
+						{
+							"element": "Yamanaka Clan"
+						},
+						{
+							"element": "Akimichi Clan"
+						},
+						{
+							"element": "Inuzuka Clan"
+						},
+						{
+							"element": "Ukyo Ginsei Clan"
+						},
+						{
+							"element": "Kaguya Clan"
+						},
+						{
+							"element": "Kenzen'na Kokei Clan"
+						},
+						{
+							"element": "Kemono Shinzo Clan"
+						},
+						{
+							"element": "Hojo Clan"
+						},
+						{
+							"element": "Void Release"
+						},
+						{
+							"element": "Yozen Clan"
+						},
+						{
+							"element": "Origami Clan"
+						},
+						{
+							"element": "Ketsueki Clan"
+						},
+						{
+							"element": "Jiongu Clan"
+						},
+						{
+							"element": "Clan of Evil Spirits"
+						},
+						{
+							"element": "Uzumaki Clan"
+						},
+						{
+							"element": "Oni Clan"
+						},
+						{
+							"element": "Flower Release"
+						},
+						{
+							"element": "Hozuki Clan"
+						},
+						{
+							"element": "Junsei Clan"
+						},
+						{
+							"element": "Dokueki Clan"
+						},
+						{
+							"element": "Soukou Clan"
+						}
+					]
+				},
+				{
+					"id": "elemental_bloodlines",
+					"elements": [
+						{
+							"element": "Ice Release"
+						},
+						{
+							"element": "Wood Release"
+						},
+						{
+							"element": "Magnet Release"
+						},
+						{
+							"element": "Scorch Release"
+						},
+						{
+							"element": "Storm Release"
+						},
+						{
+							"element": "Boil Release"
+						},
+						{
+							"element": "Lava Release"
+						},
+						{
+							"element": "Explosive Clay Art"
+						},
+						{
+							"element": "Steel Release"
+						},
+						{
+							"element": "Hatake Clan"
+						},
+						{
+							"element": "Speed Release"
+						},
+						{
+							"element": "Crystal Release"
+						},
+						{
+							"element": "Dust Release"
+						},
+						{
+							"element": "Hoshigaki Clan"
+						},
+						{
+							"element": "Glass Release"
+						},
+						{
+							"element": "Light Release"
+						},
+						{
+							"element": "Miyamoto Clan"
+						},
+						{
+							"element": "Seinaru Enjo Clan"
+						},
+						{
+							"element": "Seiryu Clan"
+						},
+						{
+							"element": "Mahofu Clan"
+						},
+						{
+							"element": "Raiu Clan"
+						},
+						{
+							"element": "Hogosha Clan"
+						},
+						{
+							"element": "Ignition Release"
+						}
+					]
+				},
+				{
+					"id": "ninjutsu_elements",
+					"elements": [
+						{
+							"element": "Raiton [ Lightning ]"
+						},
+						{
+							"element": "Doton [ Earth ]"
+						},
+						{
+							"element": "Suiton [ Water ]"
+						},
+						{
+							"element": "Fūton [ Wind ]"
+						},
+						{
+							"element": "Katon [ Fire ]"
+						}
+					]
+				},
+				{
+					"id": "genjutsu_types",
+					"elements": [
+						{
+							"element": "Illusory"
+						},
+						{
+							"element": "Enchantment"
+						},
+						{
+							"element": "Instance"
+						},
+						{
+							"element": "Chain"
+						}
+					]
+				},
+				{
+					"id": "taijutsu_styles",
+					"elements": [
+						{
+							"element": "Strong Fist Style"
+						},
+						{
+							"element": "Small Circle Combatives"
+						},
+						{
+							"element": "Flowing Arts"
+						},
+						{
+							"element": "Kyotoryuu"
+						},
+						{
+							"element": "Art of Eight Limbs"
+						},
+						{
+							"element": "Gentle Art"
+						},
+						{
+							"element": "Fissure Kicking"
+						},
+						{
+							"element": "Eight Gates"
+						},
+						{
+							"element": "Drunken Fist"
+						},
+						{
+							"element": "Kaiser Fist"
+						},
+						{
+							"element": "Grand Ultimate Art"
+						},
+						{
+							"element": "Mirror Image Art"
+						},
+						{
+							"element": "Oblivion Fist"
+						},
+						{
+							"element": "Harmonic Death Arts"
+						},
+						{
+							"element": "Channeling Martial Skill"
+						},
+						{
+							"element": "Vital Piercing Art"
+						},
+						{
+							"element": "Kote Art"
+						},
+						{
+							"element": "Heavy Body Grappling"
+						},
+						{
+							"element": "Mach Fist Style"
+						},
+						{
+							"element": "Heavenly Momentum Art"
+						},
+						{
+							"element": "Freestyle Whirlwind"
+						},
+						{
+							"element": "Light Touch Style"
+						}
+					]
+				},
+				{
+					"id": "bukijutsu_styles",
+					"elements": [
+						{
+							"element": "Phantom Slayer"
+						},
+						{
+							"element": "Sobaga Deba Sentou"
+						},
+						{
+							"element": "Kakumei no Hono Ryu"
+						},
+						{
+							"element": "Kazekiri"
+						},
+						{
+							"element": "Edge Punisher"
+						},
+						{
+							"element": "Great Destructive Blade"
+						},
+						{
+							"element": "Tetsu Ishi no Ryu"
+						},
+						{
+							"element": "Juurai Toorima"
+						},
+						{
+							"element": "Honshi Art"
+						},
+						{
+							"element": "Akira Art"
+						},
+						{
+							"element": "Seven Sword Dance"
+						},
+						{
+							"element": "Nunchaku Ryu"
+						},
+						{
+							"element": "Kyoukan Ya"
+						},
+						{
+							"element": "Doki Yari"
+						},
+						{
+							"element": "Omoi Insho"
+						},
+						{
+							"element": "Teikiatsu Ryu"
+						},
+						{
+							"element": "Tranquil Cedar Style"
+						},
+						{
+							"element": "Tetsunami Ryu"
+						},
+						{
+							"element": "Kote Art"
+						},
+						{
+							"element": "Sen Gekiretsu Nagareboshi"
+						},
+						{
+							"element": "Gunbai"
+						},
+						{
+							"element": "Sumi-Efude Masenko"
+						},
+						{
+							"element": "Meteor Crusher"
+						},
+						{
+							"element": "Shinto Muso Ryu"
+						},
+						{
+							"element": "Arcane Knight Order"
+						},
+						{
+							"element": "Infinite One Sword Style"
+						},
+						{
+							"element": "Soko Sento"
+						},
+						{
+							"element": "Ja Ryu"
+						},
+						{
+							"element": "Soul Slayer Art"
+						},
+						{
+							"element": "Reiken no Michi"
+						},
+						{
+							"element": "Siegebreaker"
+						},
+						{
+							"element": "Makimono Style"
+						}
+					]
+				},
+				{
+					"id": "affiliations",
+					"elements": [
+						{
+							"element": "Konohagakure"
+						},
+						{
+							"element": "Arashigakure"
+						},
+						{
+							"element": "Tanigakure"
+						},
+						{
+							"element": "Zaishin City"
+						},
+						{
+							"element": "Rogue"
+						},
+						{
+							"element": "Wanderer"
+						},
+						{
+							"element": "Custom"
+						}
+					]
+				},
+				{
+					"id": "career_trees",
+					"elements": [
+						{
+							"element": "Medical"
+						},
+						{
+							"element": "Religion"
+						},
+						{
+							"element": "Teacher"
+						},
+						{
+							"element": "Special Ops"
+						},
+						{
+							"element": "Ninja Hunter"
+						},
+						{
+							"element": "Gladiator"
+						},
+						{
+							"element": "Cooking"
+						},
+						{
+							"element": "Monster Hunter"
+						},
+						{
+							"element": "Performer"
+						}
+					]
+				},
+				{
+					"id": "medical_branches",
+					"elements": [
+						{
+							"element": "General Physician"
+						},
+						{
+							"element": "Emergency"
+						},
+						{
+							"element": "Internal"
+						},
+						{
+							"element": "Psychiatry"
+						},
+						{
+							"element": "Surgery"
+						}
+					]
+				},
+				{
+					"id": "religions",
+					"elements": [
+						{
+							"element": "Child of Evergreen"
+						},
+						{
+							"element": "Jashinism"
+						},
+						{
+							"element": "Zelelism"
+						},
+						{
+							"element": "O-Inari Sacrament"
+						},
+						{
+							"element": "The Great Old Ones"
+						},
+						{
+							"element": "Ninshu"
+						},
+						{
+							"element": "Buddhism"
+						},
+						{
+							"element": "Daoism"
+						},
+						{
+							"element": "Cults"
+						}
+					]
+				},
+				{
+					"id": "religious_paths",
+					"elements": [
+						{
+							"element": "Priest Path"
+						},
+						{
+							"element": "Templar Path"
+						},
+						{
+							"element": "Inquisitor Path"
+						}
+					]
+				},
+				{
+					"id": "teaching_branches",
+					"elements": [
+						{
+							"element": "All-Rounder"
+						},
+						{
+							"element": "Close Quarters Combat Expert"
+						},
+						{
+							"element": "Jutsu Expert"
+						},
+						{
+							"element": "Specialist"
+						}
+					]
+				},
+				{
+					"id": "special_ops_branches",
+					"elements": [
+						{
+							"element": "ANBU"
+						},
+						{
+							"element": "Police Force"
+						},
+						{
+							"element": "Eagle Eye"
+						},
+						{
+							"element": "Tactician"
+						},
+						{
+							"element": "Kite Master"
+						}
+					]
+				},
+				{
+					"id": "hunter_branches",
+					"elements": [
+						{
+							"element": "Oinin"
+						},
+						{
+							"element": "Mercenary"
+						},
+						{
+							"element": "Profesional Thief"
+						},
+						{
+							"element": "Private Investigator"
+						}
+					]
+				},
+				{
+					"id": "gladiator_branches",
+					"elements": [
+						{
+							"element": "Superbia"
+						},
+						{
+							"element": "Dark Horse"
+						},
+						{
+							"element": "Cestus"
+						},
+						{
+							"element": "Sagittarius"
+						}
+					]
+				},
+				{
+					"id": "cooking_branches",
+					"elements": [
+						{
+							"element": "All-Rounder"
+						},
+						{
+							"element": "Nutritionist"
+						},
+						{
+							"element": "Food Arts"
+						},
+						{
+							"element": "Shinobi"
+						}
+					]
+				},
+				{
+					"id": "monster_hunter_branches",
+					"elements": [
+						{
+							"element": "Monster Slyaer"
+						},
+						{
+							"element": "Monster Tamer"
+						},
+						{
+							"element": "Monster Crafter"
+						}
+					]
+				},
+				{
+					"id": "performance_branches",
+					"elements": [
+						{
+							"element": "Instrumentalist"
+						},
+						{
+							"element": "Bard"
+						},
+						{
+							"element": "Dancer"
+						},
+						{
+							"element": "Actor"
+						},
+						{
+							"element": "Mime"
+						},
+						{
+							"element": "Magician"
+						},
+						{
+							"element": "Puppet Theater"
+						},
+						{
+							"element": "Jester"
+						}
+					]
+				},
+				{
+					"id": "crafting_trees",
+					"elements": [
+						{
+							"element": "Worker"
+						},
+						{
+							"element": "Weaponsmithing"
+						},
+						{
+							"element": "Armorsmithing"
+						},
+						{
+							"element": "Scroll Crafting"
+						},
+						{
+							"element": "Enchantment"
+						},
+						{
+							"element": "Mechanism Crafting"
+						},
+						{
+							"element": "Pharmacology"
+						},
+						{
+							"element": "Toxicology"
+						}
+					]
+				},
+				{
+					"id": "summoning_contracts",
+					"elements": [
+						{
+							"element": "Bats"
+						},
+						{
+							"element": "Turtles"
+						},
+						{
+							"element": "Mokeys"
+						},
+						{
+							"element": "Slugs"
+						},
+						{
+							"element": "Crows"
+						},
+						{
+							"element": "Snakes"
+						},
+						{
+							"element": "Dogs"
+						},
+						{
+							"element": "Squids"
+						},
+						{
+							"element": "Rats"
+						},
+						{
+							"element": "Toads"
+						},
+						{
+							"element": "Rabbits"
+						},
+						{
+							"element": "Insects"
+						},
+						{
+							"element": "Aquatic"
+						},
+						{
+							"element": "Wild Cats"
+						}
+					]
+				},
+				{
+					"id": "golden_dragon_seals",
+					"elements": [
+						{
+							"element": "Tsukisasu Mejirushi"
+						},
+						{
+							"element": "Surai Tsumemāku"
+						},
+						{
+							"element": "Kinbodi Māku"
+						},
+						{
+							"element": "Yūgana Tsubasa Shirushi"
+						},
+						{
+							"element": "Kodōsuru Shinzō Shirushi"
+						},
+						{
+							"element": "Kuchiyose: Itsutsu Māku Ketsugō"
+						},
+						{
+							"element": "Onajimi no Māku"
+						}
+					]
+				},
+				{
+					"id": "mist_swords",
+					"elements": [
+						{
+							"element": "Kubikiribocho"
+						},
+						{
+							"element": "Samehada"
+						},
+						{
+							"element": "Shibuki"
+						},
+						{
+							"element": "Nuibari"
+						},
+						{
+							"element": "Kabutowari"
+						},
+						{
+							"element": "Hiramekarei"
+						},
+						{
+							"element": "Kiba"
+						}
+					]
+				},
+				{
+					"id": "demons",
+					"elements": [
+						{
+							"element": "Shukaku"
+						},
+						{
+							"element": "Matatabi"
+						},
+						{
+							"element": "Isobu"
+						},
+						{
+							"element": "Son Goku"
+						},
+						{
+							"element": "Kokuo"
+						},
+						{
+							"element": "Saiken"
+						},
+						{
+							"element": "Chomei"
+						},
+						{
+							"element": "Gyuki"
+						},
+						{
+							"element": "Kurama"
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "menu_options@elements",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "element",
+					"display": null
+				}
+			]
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

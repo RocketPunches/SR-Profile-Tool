@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Right Arrow.png-7cdec7e4ae0c1b465738193676624eaa.image"
+
+[deps]
+
+source_file="res://Assets/Textures/Right Arrow.png"
+dest_files=[ "res://.import/Right Arrow.png-7cdec7e4ae0c1b465738193676624eaa.image" ]
+
+[params]
+
