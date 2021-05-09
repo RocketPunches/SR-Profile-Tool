@@ -8,10 +8,11 @@ To use the tool, click on the newest version in the release list on the right si
 ## Known Issues as of v0.1.0a:
 - Tool is currently missing a selection field for chakra natures / elements
 - Tool does not currently allow for selection of PAs
-- Tool does not currently auto-fill discipline
+- Tool does not currently auto-fill discipline text or Cross Class
 - There is a bug in locking out discipline selection for the second class
 - Amegakure is not currently represented in the Affiliation dropdown
 - Some visual formatting is still incomplete
+- 3rd Class is currently not supported
 
 ## Planned Features:
 - Hosted HTML5 version
