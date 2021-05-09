@@ -328,6 +328,7 @@ custom_styles/normal = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="item_selected" from="AffiliationDropBox/OptionButton" to="AffiliationDropBox" method="_on_OptionButton_item_selected"]
 [connection signal="focus_exited" from="ShinobiTitle/LineEdit" to="ShinobiTitle" method="_on_LineEdit_focus_exited"]
 [connection signal="text_changed" from="ShinobiTitle/LineEdit" to="ShinobiTitle" method="_on_LineEdit_text_changed"]
@@ -348,11 +349,7 @@ __meta__ = {
 [connection signal="text_changed" from="TabContainer/Fears/VBoxContainer3/HBoxContainer2/LineEdit2" to="TabContainer/Fears" method="_on_LineEdit2_text_changed"]
 
 [editable path="AffiliationDropBox"]
-
 [editable path="ShinobiTitle"]
-
 [editable path="NindoTextFieldGroup"]
-
 [editable path="PersonalityTextFieldGroup"]
-
 [editable path="BackgroundTextFieldGroup"]

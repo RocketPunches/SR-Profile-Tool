@@ -33,6 +33,7 @@ func _ready():
 	# add them to the appropriate dropdown, log the index if 
 	for list_item in menu_data["classes"]["elements"]:
 		self.add_item(list_item["element"])
+		
 		if list_item["element"] == "Bloodline":
 			bloodline_index = index
 		elif list_item["element"] == "Jack":
@@ -60,9 +61,7 @@ func _on_ClassDrop1_item_selected(index):
 		class_2.set_item_disabled(bloodline_index, false)
 		class_2.set_item_disabled(jack_index, true)
 		
-		var other_selection = class_2.get_selected()
-		
-		if other_selection == jack_index:
+		if class_2.get_selected() == jack_index:
 			class_2.select(1)
 			OutputData.character_info["Class 2"] = class_2.get_item_text(1)
 			discipline_2.populate_dropdown(class_2.get_item_text(1))
@@ -75,9 +74,7 @@ func _on_ClassDrop1_item_selected(index):
 		class_2.set_item_disabled(bloodline_index, true)
 		class_2.set_item_disabled(jack_index, false)
 		
-		var other_selection = class_2.get_selected()
-		
-		if other_selection == bloodline_index:
+		if class_2.get_selected() == bloodline_index:
 			class_2.select(1)
 			OutputData.character_info["Class 2"] = class_2.get_item_text(1)
 			discipline_2.populate_dropdown(class_2.get_item_text(1))

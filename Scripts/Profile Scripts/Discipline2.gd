@@ -17,15 +17,14 @@ func populate_dropdown(class_id):
 	for discipline in class_data[class_id]["disciplines"]:
 		self.add_item(discipline["discipline_name"])
 	
-	var first_class = class_1.selected_text()
-	var second_class = class_2.selected_text()
+	var first_class = class_1.get_selected()
+	var second_class = class_2.get_selected()
+	var d1_index = discipline_1.get_selected()
 	
 	if first_class == second_class:
-		if class_1.get_selected() == class_2.get_selected():
-			if discipline_1.get_selected() == 0:
-				self.select(1)
-		
-		self.set_item_disabled(discipline_1.get_selected(), true)
+		if d1_index == 0:
+			self.select(1)
+		self.set_item_disabled(d1_index, true) # this does not work, and I have no idea why
 	
 	self.check_keystone()
 	discipline_1.check_bloodline()

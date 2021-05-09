@@ -12,7 +12,6 @@ func _ready():
 	for list_item in menu_data["bloodlines_types"]["elements"]:
 		self.add_item(list_item["element"])
 
-
 func _on_BloodlineType1_item_selected(index):
 	
 	if bloodline_drop.is_disabled() == true:

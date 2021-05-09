@@ -44,3 +44,7 @@ func populate_dropdown(type_id):
 			for list_item in menu_data["elemental_bloodlines"]["elements"]:
 				self.add_item(list_item["element"])
 				index += 1
+
+
+func _on_BloodlineDrop2_item_selected(index):
+	OutputData.character_info["Bloodline 2"] = self.get_item_text(index)

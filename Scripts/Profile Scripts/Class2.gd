@@ -22,6 +22,9 @@ func _on_ClassDrop2_item_selected(index):
 		
 	disc_drop.populate_dropdown(self.get_item_text(index))
 	
+	if index != 0 and self.is_item_disabled(0) != true:
+		self.set_item_disabled(0, true)
+	
 	OutputData.character_info["Class 2"] = self.get_item_text(index)
 
 func selected_text():

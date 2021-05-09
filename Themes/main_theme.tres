@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=19 format=2]
+[gd_resource type="Theme" load_steps=22 format=2]
 
 [ext_resource path="res://Themes/Fonts/default_scene_font.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Themes/Styles/button_stylebox.tres" type="StyleBox" id=2]
@@ -10,16 +10,24 @@
 [ext_resource path="res://Themes/Fonts/option_button_font.tres" type="DynamicFont" id=8]
 [ext_resource path="res://Themes/Styles/option_button_pressed.tres" type="StyleBox" id=9]
 [ext_resource path="res://Themes/Styles/left_align_button_disabled_stylebox.tres" type="StyleBox" id=10]
+[ext_resource path="res://Themes/Styles/panel_stylebox.tres" type="StyleBox" id=11]
+[ext_resource path="res://Themes/Styles/scroll_grabber_stylebox.tres" type="StyleBox" id=12]
+[ext_resource path="res://Themes/Styles/popup_panel_stylebox.tres" type="StyleBox" id=13]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.741176, 0.72549, 0.72549, 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
 bg_color = Color( 0.976471, 0.952941, 0.952941, 1 )
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_size = 4
 
 [sub_resource type="StyleBoxFlat" id=3]
 
@@ -269,11 +277,11 @@ OptionButton/styles/focus = null
 OptionButton/styles/hover = ExtResource( 7 )
 OptionButton/styles/normal = ExtResource( 7 )
 OptionButton/styles/pressed = ExtResource( 9 )
-Panel/styles/panel = null
-PanelContainer/styles/panel = null
-PopupDialog/styles/panel = null
+Panel/styles/panel = ExtResource( 11 )
+PanelContainer/styles/panel = ExtResource( 11 )
+PopupDialog/styles/panel = ExtResource( 13 )
 PopupMenu/colors/font_color = Color( 1, 0.517647, 0.564706, 1 )
-PopupMenu/colors/font_color_accel = Color( 1, 1, 1, 1 )
+PopupMenu/colors/font_color_accel = Color( 1, 0.709804, 0.517647, 1 )
 PopupMenu/colors/font_color_disabled = Color( 0.490196, 0.254902, 0.278431, 1 )
 PopupMenu/colors/font_color_hover = Color( 1, 1, 1, 1 )
 PopupMenu/constants/hseparation = 4
@@ -290,7 +298,7 @@ PopupMenu/styles/labeled_separator_right = null
 PopupMenu/styles/panel = SubResource( 2 )
 PopupMenu/styles/panel_disabled = SubResource( 3 )
 PopupMenu/styles/separator = SubResource( 4 )
-PopupPanel/styles/panel = null
+PopupPanel/styles/panel = ExtResource( 13 )
 ProgressBar/colors/font_color = Color( 1, 1, 1, 1 )
 ProgressBar/colors/font_color_shadow = Color( 1, 1, 1, 1 )
 ProgressBar/fonts/font = null
@@ -450,7 +458,7 @@ VScrollBar/icons/decrement = null
 VScrollBar/icons/decrement_highlight = null
 VScrollBar/icons/increment = null
 VScrollBar/icons/increment_highlight = null
-VScrollBar/styles/grabber = null
+VScrollBar/styles/grabber = ExtResource( 12 )
 VScrollBar/styles/grabber_highlight = null
 VScrollBar/styles/grabber_pressed = null
 VScrollBar/styles/scroll = null
@@ -468,7 +476,7 @@ VSplitContainer/constants/autohide = 1
 VSplitContainer/constants/separation = 12
 VSplitContainer/icons/grabber = null
 VSplitContainer/styles/bg = null
-WindowDialog/colors/title_color = Color( 0, 0, 0, 1 )
+WindowDialog/colors/title_color = Color( 0.992157, 0.513726, 0.560784, 1 )
 WindowDialog/constants/close_h_ofs = 18
 WindowDialog/constants/close_v_ofs = 18
 WindowDialog/constants/scaleborder_size = 4
@@ -476,4 +484,4 @@ WindowDialog/constants/title_height = 20
 WindowDialog/fonts/title_font = null
 WindowDialog/icons/close = null
 WindowDialog/icons/close_highlight = null
-WindowDialog/styles/panel = null
+WindowDialog/styles/panel = ExtResource( 13 )

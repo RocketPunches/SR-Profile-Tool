@@ -2,6 +2,5 @@ extends Label
 
 func _ready():
 	
-	var data = ImportData.menu_data
-	print(data)
+	#print(ImportData.profile_string)
 	pass

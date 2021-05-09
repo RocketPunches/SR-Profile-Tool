@@ -1,22 +1,51 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Themes/Fonts/source/BasicallyASansSerif-Black.otf" type="DynamicFontData" id=1]
-[ext_resource path="res://Assets/Textures/Right Arrow.png" type="Image" id=2]
-[ext_resource path="res://Assets/Textures/Left Arrow.png" type="Image" id=3]
-[ext_resource path="res://Scripts/ProfSectionController.gd" type="Script" id=4]
-[ext_resource path="res://Scenes/ProfileSections/PersonalDataContainer.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/ProfileSections/PhysCharContainer.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scripts/ButtonTexture.gd" type="Script" id=7]
+[ext_resource path="res://Themes/Fonts/section_header_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Scripts/Profile Scripts/Height.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Profile Scripts/Nickname.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/Profile Scripts/Age.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Profile Scripts/Birthdate.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Profile Scripts/ChakraColor.gd" type="Script" id=7]
 [ext_resource path="res://Themes/main_theme.tres" type="Theme" id=8]
-[ext_resource path="res://Scenes/ProfileSections/SocPerContainer.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/ProfileSections/RPSystemsContainer.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Scenes/ProfileSections/MissionContainer.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/ProfileSections/InventoryContainer.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Scenes/ProfileSections/FinalizationContainer.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scripts/Profile Scripts/Gender.gd" type="Script" id=9]
+[ext_resource path="res://Themes/Fonts/input_field_font_small.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Themes/Styles/text_edit_label.tres" type="StyleBox" id=11]
+[ext_resource path="res://Themes/Styles/tab_line_edit_stylebox.tres" type="StyleBox" id=12]
+[ext_resource path="res://Scenes/Components/Background.gd" type="Script" id=13]
+[ext_resource path="res://Themes/Styles/line_edit_label_stylebox.tres" type="StyleBox" id=14]
+[ext_resource path="res://Scripts/Profile Scripts/Name.gd" type="Script" id=15]
+[ext_resource path="res://Scripts/Profile Scripts/Strengths.gd" type="Script" id=16]
+[ext_resource path="res://Scripts/Profile Scripts/Weaknesses.gd" type="Script" id=17]
+[ext_resource path="res://Scripts/Profile Scripts/Fears.gd" type="Script" id=18]
+[ext_resource path="res://Scripts/Profile Scripts/Personality.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/Profile Scripts/Affiliation.gd" type="Script" id=20]
+[ext_resource path="res://Scripts/Profile Scripts/Title.gd" type="Script" id=21]
+[ext_resource path="res://Scripts/Profile Scripts/Nindo.gd" type="Script" id=22]
+[ext_resource path="res://Scripts/Profile Scripts/Weight.gd" type="Script" id=23]
+[ext_resource path="res://Scripts/Profile Scripts/ChakraMat.gd" type="Script" id=24]
+[ext_resource path="res://Themes/Fonts/input_field_font.tres" type="DynamicFont" id=25]
+[ext_resource path="res://Scripts/Profile Scripts/Bloodline2.gd" type="Script" id=26]
+[ext_resource path="res://Scripts/Profile Scripts/Class1.gd" type="Script" id=27]
+[ext_resource path="res://Scripts/Profile Scripts/BloodlineType2.gd" type="Script" id=28]
+[ext_resource path="res://Scripts/Profile Scripts/Bloodline1.gd" type="Script" id=29]
+[ext_resource path="res://Scripts/Profile Scripts/Discipline2.gd" type="Script" id=30]
+[ext_resource path="res://Scripts/Profile Scripts/Class2.gd" type="Script" id=31]
+[ext_resource path="res://Scripts/Profile Scripts/BloodlineType1.gd" type="Script" id=32]
+[ext_resource path="res://Scripts/Profile Scripts/Discipline1.gd" type="Script" id=33]
+[ext_resource path="res://Scripts/Profile Scripts/Exp.gd" type="Script" id=34]
+[ext_resource path="res://Scripts/Profile Scripts/StatsHelper.gd" type="Script" id=35]
+[ext_resource path="res://Scripts/Profile Scripts/PhysicalDescription.gd" type="Script" id=36]
+[ext_resource path="res://Scripts/Profile Scripts/OutfitDescription.gd" type="Script" id=37]
+[ext_resource path="res://Scripts/Profile Scripts/GenerateProfile.gd" type="Script" id=38]
+[ext_resource path="res://Themes/Fonts/profile_output.tres" type="DynamicFont" id=39]
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
 font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.945098, 0.921569, 0.886275, 1 )
 
 [node name="Profile_Core" type="Control"]
 anchor_right = 1.0
@@ -38,7 +67,6 @@ margin_bottom = -20.0
 grow_horizontal = 2
 grow_vertical = 2
 custom_constants/separation = 4
-script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -53,103 +81,1336 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LeftButton" type="TextureButton" parent="MainProfileContainer/NavigationContainer"]
-margin_left = 306.0
-margin_top = 4.0
-margin_right = 346.0
-margin_bottom = 44.0
-rect_min_size = Vector2( 40, 40 )
-size_flags_horizontal = 4
-size_flags_vertical = 4
-expand = true
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-source_image = ExtResource( 3 )
-
 [node name="SectionLabel" type="Label" parent="MainProfileContainer/NavigationContainer"]
-margin_left = 350.0
-margin_right = 633.0
+margin_left = 330.0
+margin_right = 654.0
 margin_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme = ExtResource( 8 )
 custom_fonts/font = SubResource( 1 )
-text = "Test Label "
+text = "Profile Tool"
 align = 1
 valign = 1
 uppercase = true
 
-[node name="RightButton" type="TextureButton" parent="MainProfileContainer/NavigationContainer"]
-margin_left = 637.0
-margin_top = 4.0
-margin_right = 677.0
-margin_bottom = 44.0
-rect_min_size = Vector2( 40, 40 )
+[node name="ScrollContainer" type="ScrollContainer" parent="MainProfileContainer"]
+margin_top = 52.0
+margin_right = 984.0
+margin_bottom = 984.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 8 )
+scroll_horizontal_enabled = false
+scroll_vertical = 1868
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer"]
+margin_top = -1868.0
+margin_right = 972.0
+margin_bottom = 932.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( -604.806, 40 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 8 )
+custom_constants/separation = 10
+
+[node name="Spacer" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_right = 972.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="PersonalData" type="PanelContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 20.0
+margin_right = 972.0
+margin_bottom = 93.0
+theme = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/PersonalData"]
+margin_left = 15.0
+margin_top = 10.0
+margin_right = 972.0
+margin_bottom = 58.0
+custom_fonts/font = ExtResource( 2 )
+text = "Personal Data"
+
+[node name="Spacer2" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 103.0
+margin_right = 972.0
+margin_bottom = 113.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="NameInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 123.0
+margin_right = 972.0
+margin_bottom = 163.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Full Name"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="NicknameInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 173.0
+margin_right = 972.0
+margin_bottom = 213.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Nickname"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="AgeInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 223.0
+margin_right = 972.0
+margin_bottom = 263.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Age"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="BirthInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 273.0
+margin_right = 972.0
+margin_bottom = 313.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Birthdate"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="GenderInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 323.0
+margin_right = 972.0
+margin_bottom = 363.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Gender"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="Spacer3" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 373.0
+margin_right = 972.0
+margin_bottom = 383.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="SocPer" type="PanelContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 393.0
+margin_right = 972.0
+margin_bottom = 466.0
+theme = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/SocPer"]
+margin_left = 15.0
+margin_top = 10.0
+margin_right = 972.0
+margin_bottom = 58.0
+custom_fonts/font = ExtResource( 2 )
+text = "Social and Personality"
+
+[node name="Spacer4" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 476.0
+margin_right = 972.0
+margin_bottom = 486.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="AffiliationDropBox" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 496.0
+margin_right = 972.0
+margin_bottom = 536.0
+alignment = 1
+script = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/AffiliationDropBox"]
+margin_left = 219.0
+margin_right = 419.0
+margin_bottom = 40.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 200, 40 )
+custom_fonts/font = ExtResource( 25 )
+text = "Affiliation:"
+align = 2
+valign = 1
+
+[node name="OptionButton" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/AffiliationDropBox"]
+margin_left = 423.0
+margin_right = 623.0
+margin_bottom = 40.0
+grow_horizontal = 2
+rect_min_size = Vector2( 200, 40 )
+theme = ExtResource( 8 )
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/AffiliationDropBox"]
+margin_left = 627.0
+margin_right = 752.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 125, 40 )
+
+[node name="ShinobiTitle" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 546.0
+margin_right = 972.0
+margin_bottom = 586.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle"]
+margin_left = 119.0
+margin_right = 394.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 275, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Title"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle"]
+margin_left = 398.0
+margin_right = 648.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle"]
+margin_left = 652.0
+margin_right = 852.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="NindoTextFieldGroup" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 236.0
+margin_top = 596.0
+margin_right = 736.0
+margin_bottom = 726.0
 size_flags_horizontal = 4
-size_flags_vertical = 4
-expand = true
+theme = ExtResource( 8 )
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NindoTextFieldGroup"]
+margin_right = 500.0
+margin_bottom = 26.0
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 11 )
+custom_fonts/font = ExtResource( 10 )
+text = "Nindo"
+
+[node name="TextEdit" type="TextEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/NindoTextFieldGroup"]
+margin_top = 30.0
+margin_right = 500.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 500, 100 )
+text = "
+"
+wrap_enabled = true
+
+[node name="PersonalityTextFieldGroup" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 236.0
+margin_top = 736.0
+margin_right = 736.0
+margin_bottom = 966.0
+size_flags_horizontal = 4
+theme = ExtResource( 8 )
+script = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/PersonalityTextFieldGroup"]
+margin_right = 500.0
+margin_bottom = 26.0
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 11 )
+custom_fonts/font = ExtResource( 10 )
+text = "Personality"
+
+[node name="TextEdit" type="TextEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/PersonalityTextFieldGroup"]
+margin_top = 30.0
+margin_right = 500.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 500, 200 )
+text = "
+"
+wrap_enabled = true
+
+[node name="BackgroundTextFieldGroup" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 236.0
+margin_top = 976.0
+margin_right = 736.0
+margin_bottom = 1206.0
+size_flags_horizontal = 4
+theme = ExtResource( 8 )
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BackgroundTextFieldGroup"]
+margin_right = 500.0
+margin_bottom = 26.0
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 11 )
+custom_fonts/font = ExtResource( 10 )
+text = "Background"
+
+[node name="TextEdit" type="TextEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BackgroundTextFieldGroup"]
+margin_top = 30.0
+margin_right = 500.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 500, 200 )
+text = "
+"
+wrap_enabled = true
+
+[node name="TabContainer" type="TabContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 236.0
+margin_top = 1216.0
+margin_right = 736.0
+margin_bottom = 1306.0
+grow_horizontal = 2
+rect_min_size = Vector2( 500, 90 )
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="Strengths" type="Tabs" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 25.0
+script = ExtResource( 16 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer"]
+margin_right = 500.0
+margin_bottom = 25.0
+alignment = 1
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer"]
+margin_left = 138.0
+margin_top = 2.0
+margin_right = 248.0
+margin_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Strength 1"
+align = 2
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer"]
+margin_left = 252.0
+margin_right = 362.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 110, 0 )
+custom_styles/focus = ExtResource( 12 )
+custom_styles/normal = ExtResource( 12 )
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer"]
+margin_top = 29.0
+margin_right = 500.0
+margin_bottom = 54.0
+alignment = 1
+
+[node name="Label2" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer2"]
+margin_left = 138.0
+margin_top = 2.0
+margin_right = 248.0
+margin_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Strength 2"
+align = 2
+
+[node name="LineEdit2" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer2"]
+margin_left = 252.0
+margin_right = 362.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 110, 0 )
+custom_styles/focus = ExtResource( 12 )
+custom_styles/normal = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weaknesses" type="Tabs" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 25.0
+script = ExtResource( 17 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2"]
+margin_right = 500.0
+margin_bottom = 25.0
+alignment = 1
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer"]
+margin_left = 137.0
+margin_top = 2.0
+margin_right = 247.0
+margin_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Weakness 1"
+align = 2
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer"]
+margin_left = 252.0
+margin_right = 362.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 110, 0 )
+custom_styles/focus = ExtResource( 12 )
+custom_styles/normal = ExtResource( 12 )
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2"]
+margin_top = 29.0
+margin_right = 500.0
+margin_bottom = 54.0
+alignment = 1
+
+[node name="Label2" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer2"]
+margin_left = 137.0
+margin_top = 2.0
+margin_right = 247.0
+margin_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Weakness 2"
+align = 2
+
+[node name="LineEdit2" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer2"]
+margin_left = 252.0
+margin_right = 362.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 110, 0 )
+custom_styles/focus = ExtResource( 12 )
+custom_styles/normal = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fears" type="Tabs" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 25.0
+script = ExtResource( 18 )
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3"]
+margin_right = 500.0
+margin_bottom = 25.0
+alignment = 1
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer"]
+margin_left = 137.0
+margin_top = 2.0
+margin_right = 247.0
+margin_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Fears 1"
+align = 2
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer"]
+margin_left = 252.0
+margin_right = 362.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 110, 0 )
+custom_styles/focus = ExtResource( 12 )
+custom_styles/normal = ExtResource( 12 )
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3"]
+margin_top = 29.0
+margin_right = 500.0
+margin_bottom = 54.0
+alignment = 1
+
+[node name="Label2" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer2"]
+margin_left = 137.0
+margin_top = 2.0
+margin_right = 247.0
+margin_bottom = 25.0
+grow_horizontal = 0
+grow_vertical = 2
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Fears 2"
+align = 2
+
+[node name="LineEdit2" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer2"]
+margin_left = 252.0
+margin_right = 362.0
+margin_bottom = 25.0
+rect_min_size = Vector2( 110, 0 )
+custom_styles/focus = ExtResource( 12 )
+custom_styles/normal = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spacer5" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1316.0
+margin_right = 972.0
+margin_bottom = 1326.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="PhysChar" type="PanelContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1336.0
+margin_right = 972.0
+margin_bottom = 1409.0
+theme = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/PhysChar"]
+margin_left = 15.0
+margin_top = 10.0
+margin_right = 972.0
+margin_bottom = 58.0
+custom_fonts/font = ExtResource( 2 )
+text = "Physical Characteristics"
+
+[node name="Spacer6" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1419.0
+margin_right = 972.0
+margin_bottom = 1429.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="HeightInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1439.0
+margin_right = 972.0
+margin_bottom = 1479.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Height"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="WeightInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1489.0
+margin_right = 972.0
+margin_bottom = 1529.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Weight"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="PhysicalDesInput" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 236.0
+margin_top = 1539.0
+margin_right = 736.0
+margin_bottom = 1769.0
+size_flags_horizontal = 4
+theme = ExtResource( 8 )
+script = ExtResource( 36 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text_edit_path = NodePath("TextEdit")
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/PhysicalDesInput"]
+margin_right = 500.0
+margin_bottom = 26.0
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 11 )
+custom_fonts/font = ExtResource( 10 )
+text = "Physical Description"
+
+[node name="TextEdit" type="TextEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/PhysicalDesInput"]
+margin_top = 30.0
+margin_right = 500.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 500, 200 )
+text = "
+"
+wrap_enabled = true
+
+[node name="OutfitDesInput" type="VBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 236.0
+margin_top = 1779.0
+margin_right = 736.0
+margin_bottom = 2009.0
+size_flags_horizontal = 4
+theme = ExtResource( 8 )
+script = ExtResource( 37 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text_edit_path = NodePath("TextEdit")
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/OutfitDesInput"]
+margin_right = 500.0
+margin_bottom = 26.0
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 11 )
+custom_fonts/font = ExtResource( 10 )
+text = "Outfit Description"
+
+[node name="TextEdit" type="TextEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/OutfitDesInput"]
+margin_top = 30.0
+margin_right = 500.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 500, 200 )
+text = "
+"
+wrap_enabled = true
+
+[node name="ChakraColorInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2019.0
+margin_right = 972.0
+margin_bottom = 2059.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-source_image = ExtResource( 2 )
 
-[node name="PersonalDataContainer" parent="MainProfileContainer" instance=ExtResource( 5 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 52.0
-margin_right = 984.0
-margin_bottom = 85.0
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
 theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Chakra Color"
+align = 2
+valign = 1
 
-[node name="PhysCharContainer" parent="MainProfileContainer" instance=ExtResource( 6 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 81.0
-margin_right = 984.0
-margin_bottom = 106.0
-
-[node name="SocPerContainer" parent="MainProfileContainer" instance=ExtResource( 9 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 52.0
-margin_right = 984.0
-margin_bottom = 85.0
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
 theme = ExtResource( 8 )
+clear_button_enabled = true
 
-[node name="RPSystemsContainer" parent="MainProfileContainer" instance=ExtResource( 10 )]
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="ChakraMatInput" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2069.0
+margin_right = 972.0
+margin_bottom = 2109.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Chakra Materialization"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+
+[node name="Container" type="Container" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="Spacer7" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2119.0
+margin_right = 972.0
+margin_bottom = 2129.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="RPSystems" type="PanelContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2139.0
+margin_right = 972.0
+margin_bottom = 2212.0
+theme = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/RPSystems"]
+margin_left = 15.0
+margin_top = 10.0
+margin_right = 972.0
+margin_bottom = 58.0
+custom_fonts/font = ExtResource( 2 )
+text = "RP Systems Info"
+
+[node name="Spacer8" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2222.0
+margin_right = 972.0
+margin_bottom = 2232.0
+rect_min_size = Vector2( 20, 10 )
+
+[node name="Class1DropContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2242.0
+margin_right = 972.0
+margin_bottom = 2280.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Class1Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer"]
+margin_left = 256.0
+margin_right = 406.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 150, 0 )
+custom_fonts/font = ExtResource( 25 )
+text = "Class 1"
+align = 2
+valign = 1
+
+[node name="ClassDrop1" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer"]
+margin_left = 411.0
+margin_right = 561.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+script = ExtResource( 27 )
+discipline_1_path = NodePath("../DiscDrop1")
+discipline_2_path = NodePath("../../Class2DropContainer/DiscDrop2")
+class_2_path = NodePath("../../Class2DropContainer/ClassDrop2")
+
+[node name="DiscDrop1" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer"]
+margin_left = 566.0
+margin_right = 716.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+script = ExtResource( 33 )
+discipline_2_path = NodePath("../../Class2DropContainer/DiscDrop2")
+class_1_path = NodePath("../ClassDrop1")
+class_2_path = NodePath("../../Class2DropContainer/ClassDrop2")
+bl_label_path = NodePath("../../Bloodline1DropContainer/Bloodline1Label")
+bloodline_1_path = NodePath("../../Bloodline1DropContainer/BloodlineDrop1")
+bloodline_2_path = NodePath("../../Bloodline2DropContainer/BloodlineDrop2")
+
+[node name="Class2DropContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2290.0
+margin_right = 972.0
+margin_bottom = 2328.0
+theme = ExtResource( 8 )
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Class2Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer"]
+margin_left = 256.0
+margin_right = 406.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 150, 0 )
+custom_fonts/font = ExtResource( 25 )
+text = "Class 2"
+align = 2
+valign = 1
+
+[node name="ClassDrop2" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer"]
+margin_left = 411.0
+margin_right = 561.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+script = ExtResource( 31 )
+discipline_path = NodePath("../DiscDrop2")
+
+[node name="DiscDrop2" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer"]
+margin_left = 566.0
+margin_right = 716.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 150, 0 )
+disabled = true
+script = ExtResource( 30 )
+discipline_1_path = NodePath("../../Class1DropContainer/DiscDrop1")
+class_1_path = NodePath("../../Class1DropContainer/ClassDrop1")
+class_2_path = NodePath("../ClassDrop2")
+
+[node name="Spacer9" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2338.0
+margin_right = 972.0
+margin_bottom = 2358.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Bloodline1DropContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2368.0
+margin_right = 972.0
+margin_bottom = 2406.0
+custom_constants/separation = 5
+alignment = 1
+
+[node name="Bloodline1Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer"]
+margin_left = 218.0
+margin_right = 393.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 175, 0 )
+custom_fonts/font = ExtResource( 25 )
+text = "Bloodline"
+align = 2
+valign = 1
+
+[node name="BloodlineType1" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer"]
+margin_left = 398.0
+margin_right = 573.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+script = ExtResource( 32 )
+bloodline_drop_path = NodePath("../BloodlineDrop1")
+
+[node name="BloodlineDrop1" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer"]
+margin_left = 578.0
+margin_right = 753.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+disabled = true
+script = ExtResource( 29 )
+bloodline_type_path = NodePath("../BloodlineType1")
+bloodline_type_2_path = NodePath("../../Bloodline2DropContainer/BloodlineType2")
+
+[node name="Bloodline2DropContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
 visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 52.0
-margin_right = 984.0
-margin_bottom = 116.0
+margin_right = 535.0
+margin_bottom = 38.0
+custom_constants/separation = 5
+alignment = 1
 
-[node name="MissionContainer" parent="MainProfileContainer" instance=ExtResource( 11 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 52.0
-margin_right = 984.0
-margin_bottom = 85.0
+[node name="Bloodline2Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer"]
+margin_left = 334.0
+margin_right = 509.0
+margin_bottom = 38.0
+grow_horizontal = 0
+rect_min_size = Vector2( 175, 0 )
+custom_fonts/font = ExtResource( 25 )
+text = "Bloodline 2"
+align = 2
+valign = 1
 
-[node name="InventoryContainer" parent="MainProfileContainer" instance=ExtResource( 12 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 52.0
-margin_right = 984.0
-margin_bottom = 85.0
+[node name="BloodlineType2" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer"]
+margin_left = 514.0
+margin_right = 689.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+disabled = true
+script = ExtResource( 28 )
+bloodline_drop_path = NodePath("../BloodlineDrop2")
 
-[node name="FinalizationContainer" parent="MainProfileContainer" instance=ExtResource( 13 )]
-margin_top = 52.0
-margin_right = 984.0
-margin_bottom = 52.0
-[connection signal="pressed" from="MainProfileContainer/NavigationContainer/LeftButton" to="MainProfileContainer" method="_on_LeftButton_pressed"]
-[connection signal="pressed" from="MainProfileContainer/NavigationContainer/RightButton" to="MainProfileContainer" method="_on_RightButton_pressed"]
+[node name="BloodlineDrop2" type="OptionButton" parent="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer"]
+margin_left = 514.0
+margin_right = 689.0
+margin_bottom = 38.0
+rect_min_size = Vector2( 175, 0 )
+disabled = true
+script = ExtResource( 26 )
+bl_1_path = NodePath("../../Bloodline1DropContainer/BloodlineDrop1")
+
+[node name="Spacer10" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2416.0
+margin_right = 972.0
+margin_bottom = 2436.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="ExpContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2446.0
+margin_right = 972.0
+margin_bottom = 2486.0
+grow_horizontal = 2
+theme = ExtResource( 8 )
+alignment = 1
+script = ExtResource( 35 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+br_value_path = NodePath("../BodyRankContainer/BRValue")
+chakra_value_path = NodePath("../ChakraContainer/ChakraValue")
+stamina_value_path = NodePath("../StaminaContainer/StaminaValue")
+
+[node name="Label" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ExpContainer"]
+margin_left = 69.0
+margin_right = 444.0
+margin_bottom = 40.0
+grow_horizontal = 0
+rect_min_size = Vector2( 375, 40 )
+theme = ExtResource( 8 )
+custom_styles/normal = ExtResource( 14 )
+custom_fonts/font = ExtResource( 25 )
+text = "Experience Points"
+align = 2
+valign = 1
+
+[node name="LineEdit" type="LineEdit" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ExpContainer"]
+margin_left = 448.0
+margin_right = 698.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 250, 40 )
+theme = ExtResource( 8 )
+clear_button_enabled = true
+script = ExtResource( 34 )
+helper_path = NodePath("..")
+timer_path = NodePath("../Timer")
+
+[node name="Container" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ExpContainer"]
+margin_left = 702.0
+margin_right = 902.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="Timer" type="Timer" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ExpContainer"]
+one_shot = true
+
+[node name="Spacer11" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2496.0
+margin_right = 972.0
+margin_bottom = 2516.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="BodyRankContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2526.0
+margin_right = 972.0
+margin_bottom = 2564.0
+alignment = 1
+
+[node name="BRLabel" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BodyRankContainer"]
+margin_left = 394.0
+margin_right = 573.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 25 )
+text = "Body Rank: "
+align = 2
+valign = 1
+
+[node name="BRValue" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/BodyRankContainer"]
+margin_left = 577.0
+margin_right = 577.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 25 )
+valign = 1
+
+[node name="ChakraContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2574.0
+margin_right = 972.0
+margin_bottom = 2612.0
+alignment = 1
+
+[node name="ChakraLabel" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraContainer"]
+margin_left = 422.0
+margin_right = 545.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 25 )
+text = "Chakra: "
+align = 2
+valign = 1
+
+[node name="ChakraValue" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraContainer"]
+margin_left = 549.0
+margin_right = 549.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 25 )
+valign = 1
+
+[node name="StaminaContainer" type="HBoxContainer" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2622.0
+margin_right = 972.0
+margin_bottom = 2660.0
+alignment = 1
+
+[node name="StaminaLabel" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/StaminaContainer"]
+margin_left = 413.0
+margin_right = 555.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 25 )
+text = "Stamina: "
+align = 2
+valign = 1
+
+[node name="StaminaValue" type="Label" parent="MainProfileContainer/ScrollContainer/VBoxContainer/StaminaContainer"]
+margin_left = 559.0
+margin_right = 559.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 25 )
+valign = 1
+
+[node name="Spacer12" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2670.0
+margin_right = 972.0
+margin_bottom = 2690.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="GenerateButton" type="Button" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_left = 323.0
+margin_top = 2700.0
+margin_right = 648.0
+margin_bottom = 2740.0
+rect_min_size = Vector2( 325, 40 )
+size_flags_horizontal = 4
+text = "Generate Profile Code"
+script = ExtResource( 38 )
+profile_text_path = NodePath("../../../../ProfileCodePopup/ProfileCode")
+final_pop_path = NodePath("../../../../ProfileCodePopup")
+
+[node name="BottomSpacer" type="Control" parent="MainProfileContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2750.0
+margin_right = 972.0
+margin_bottom = 2800.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="ProfileCodePopup" type="WindowDialog" parent="."]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -300.0
+margin_top = -350.0
+margin_right = 300.0
+margin_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource( 8 )
+window_title = "Profile Code"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProfileCode" type="TextEdit" parent="ProfileCodePopup"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/read_only = SubResource( 2 )
+custom_fonts/font = ExtResource( 39 )
+custom_colors/font_color_readonly = Color( 0.227451, 0.223529, 0.223529, 1 )
+text = "Profile code"
+readonly = true
+wrap_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/NameInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/NicknameInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/AgeInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/BirthInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/GenderInput" method="_on_LineEdit_text_changed"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/AffiliationDropBox/OptionButton" to="MainProfileContainer/ScrollContainer/VBoxContainer/AffiliationDropBox" method="_on_OptionButton_item_selected"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ShinobiTitle" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/NindoTextFieldGroup/TextEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/NindoTextFieldGroup" method="_on_TextEdit_focus_exited"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/PersonalityTextFieldGroup/TextEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/PersonalityTextFieldGroup" method="_on_TextEdit_focus_exited"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/BackgroundTextFieldGroup/TextEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/BackgroundTextFieldGroup" method="_on_TextEdit_focus_exited"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer2/LineEdit2" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths" method="_on_LineEdit2_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths/VBoxContainer/HBoxContainer2/LineEdit2" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Strengths" method="_on_LineEdit2_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer2/LineEdit2" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses" method="_on_LineEdit2_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses/VBoxContainer2/HBoxContainer2/LineEdit2" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Weaknesses" method="_on_LineEdit2_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer2/LineEdit2" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears" method="_on_LineEdit2_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears/VBoxContainer3/HBoxContainer2/LineEdit2" to="MainProfileContainer/ScrollContainer/VBoxContainer/TabContainer/Fears" method="_on_LineEdit2_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/HeightInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/WeightInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/PhysicalDesInput/TextEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/PhysicalDesInput" method="_on_TextEdit_focus_exited"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/OutfitDesInput/TextEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/OutfitDesInput" method="_on_TextEdit_focus_exited"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraColorInput" method="_on_LineEdit_text_changed"]
+[connection signal="focus_exited" from="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput" method="_on_LineEdit_focus_exited"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ChakraMatInput" method="_on_LineEdit_text_changed"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer/ClassDrop1" to="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer/ClassDrop1" method="_on_ClassDrop1_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer/DiscDrop1" to="MainProfileContainer/ScrollContainer/VBoxContainer/Class1DropContainer/DiscDrop1" method="_on_DiscDrop1_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer/ClassDrop2" to="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer/ClassDrop2" method="_on_ClassDrop2_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer/DiscDrop2" to="MainProfileContainer/ScrollContainer/VBoxContainer/Class2DropContainer/DiscDrop2" method="_on_DiscDrop2_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer/BloodlineType1" to="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer/BloodlineType1" method="_on_BloodlineType1_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer/BloodlineDrop1" to="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline1DropContainer/BloodlineDrop1" method="_on_BloodlineDrop1_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer/BloodlineType2" to="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer/BloodlineType2" method="_on_BloodlineType2_item_selected"]
+[connection signal="item_selected" from="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer/BloodlineDrop2" to="MainProfileContainer/ScrollContainer/VBoxContainer/Bloodline2DropContainer/BloodlineDrop2" method="_on_BloodlineDrop2_item_selected"]
+[connection signal="text_changed" from="MainProfileContainer/ScrollContainer/VBoxContainer/ExpContainer/LineEdit" to="MainProfileContainer/ScrollContainer/VBoxContainer/ExpContainer/LineEdit" method="_on_LineEdit_text_changed"]
+[connection signal="pressed" from="MainProfileContainer/ScrollContainer/VBoxContainer/GenerateButton" to="MainProfileContainer/ScrollContainer/VBoxContainer/GenerateButton" method="_on_GenerateButton_pressed"]

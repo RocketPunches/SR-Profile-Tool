@@ -9,6 +9,9 @@ easier and simplify loops in the processing scripts
 
 var menu_data = {}
 var class_data = {}
+var body_rank_data = {}
+var expansion_data = {}
+var profile_string = {}
 
 func _ready():
 	var data_read = File.new()
@@ -29,3 +32,13 @@ func _ready():
 				var new_entry = entry.duplicate()
 				new_entry.erase("id")
 				class_data[ entry["id"] ] = new_entry
+				
+	for sheet in data_cdb["sheets"]:
+		if sheet["name"] == "experience":
+			for entry in sheet["lines"]:
+				body_rank_data = entry["body_rank_value"]
+	
+	for sheet in data_cdb["sheets"]:
+		if sheet["name"] == "experience":
+			for entry in sheet["lines"]:
+				expansion_data = entry["expansion_value"]

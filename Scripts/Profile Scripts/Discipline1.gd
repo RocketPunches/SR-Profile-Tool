@@ -55,6 +55,7 @@ func _on_DiscDrop1_item_selected(index):
 			discipline_2.set_item_disabled(2, false)
 		
 		discipline_2.set_item_disabled(index, true)
+		print("Ran Disc1 Selection disable")
 	
 	self.check_keystone()
 	discipline_2.check_keystone()
@@ -90,10 +91,12 @@ func check_keystone():
 		if discipline_2.get_selected() == 0 or discipline_2.get_selected() == 2:
 			discipline_2.select(1)
 			discipline_2.set_item_disabled(1, false)
+			print("Ran Disc1 Keystone undisable")
 		else: 
 			discipline_2.select(0)
 			discipline_2.set_item_disabled(0, false)
 			discipline_2.set_item_disabled(2, false)
+			print("Ran Disc1 Keystone undisable")
 		
 		discipline_2.set_item_disabled(disc_2_index, true)
 
@@ -105,9 +108,11 @@ func check_bloodline():
 	if self.selected_text() == "Dual Ancestry" or discipline_2.selected_text() == "Dual Ancestry":
 		bl_label.text = "Bloodline 1"
 		bloodline_2.set_visible(true)
+		OutputData.has_DA = true
 	else:
 		bl_label.text = "Bloodline"
 		bloodline_2.set_visible(false)
+		OutputData.has_DA = false
 	
 	if first_class == "Jack" or second_class == "Jack":
 		bloodline_2.set_visible(false)
