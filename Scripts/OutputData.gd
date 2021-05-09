@@ -106,7 +106,7 @@ func format_profile():
 	var personal_data = (
 		"[size=18]▰[color=black]▰[/color]▰ PERSONAL DATA[/size]\n" + 
 		"\n" +
-		"[size=10][b]Full Name:[/b] {Full Name}" +
+		"[size=10][b]Full Name:[/b] {Full Name}\n" +
 		"[b]Nickname:[/b] {Nickname}\n" +
 		"[b]Age:[/b] {Age}\n" +
 		"[b]Birthdate:[/b] {Birthdate}\n" +

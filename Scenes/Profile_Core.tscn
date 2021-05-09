@@ -1336,7 +1336,6 @@ margin_bottom = 2800.0
 rect_min_size = Vector2( 0, 50 )
 
 [node name="ProfileCodePopup" type="WindowDialog" parent="."]
-visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
